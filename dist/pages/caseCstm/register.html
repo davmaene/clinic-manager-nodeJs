@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>D Dashboard | Enregistrement</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="/plugins/toastr/toastr.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="/dist/css/css.style.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!--  -->
+    <script src="/js/js.redirect.js"></script>
+</head>
+<body class="hold-transition register-page">
+<div class="register-box">
+    <div class="register-logo">
+        <a href="#"><b>Claudette-Clinic.</b>LTE</a>
+    </div>
+
+    <div class="card sb-sm">
+        <div class="card-body register-card-body">
+            <p class="login-box-msg">Nouvel enregistrement</p>
+
+<!--            <form action="../../index.html" method="post">-->
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Nom" id="s-sgn-n" name="s-sgn-n">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
+                        </div>
+                    </div>
+                    <small class="text-danger w-100" id="s-sgn-n-n">ce champ ne doit contenir que des lêttres muniscules >= 2</small>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="PostNom" id="s-sgn-ps" name="s-sgn-ps">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
+                        </div>
+                    </div>
+                    <small class="text-danger w-100" id="s-sgn-ps-n">Ce champ ne doit contenir que des lêttres muniscules >= 2</small>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="PréNom" id="s-sgn-pr" name="s-sgn-pr">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
+                        </div>
+                    </div>
+                    <small class="text-danger w-100" id="s-sgn-pr-n">Ce champ ne doit contenir que des lêttres muniscules >= 2</small>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Email" id="s-sgn-em" name="s-sgn-em">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                    </div>
+                    <small class="text-danger w-100" id="s-sgn-em-n">Mauvaise adresse email</small>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Téléphone" id="s-sgn-tlp" name="s-sgn-tlp">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-phone"></span>
+                        </div>
+                    </div>
+                    <small class="text-danger w-100" id="s-sgn-tlp-n">
+                      Mauvais numero | ex: <i class="badge badge-danger">012 332 4454</i> OU <i class="badge badge-danger">+243 123 324 454</i>
+                    </small>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Mot de passe" id="s-sgn-pwd" name="s-sgn-pwd">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-eye" id="sh-pwd"></span>
+                        </div>
+                    </div>
+                    <small class="text-danger w-100" id="s-sgn-pwd-n">le mot de pass doit avoir >= 6 caractères</small>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Confirmer mot de passe" id="s-sgn-pwdc" name="s-sgn-pwdc">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                    <small class="text-danger w-100" id="s-sgn-pwdc-n">les mots de passe ne sont pas identiques</small>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="icheck-primary">
+                            <input type="checkbox" id="agreeTerms" name="terms">
+                            <label for="agreeTerms" id="agreeTerms-n">
+                                <i>J'accepte les </i><a href="#">conditions</a>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary btn-block" id="s-sgn-btn">Enregistrer</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+<!--            </form>-->
+            <a href="/login" class="text-center">J'ai déjà un compte</a>
+        </div>
+        <!-- /.form-box -->
+    </div><!-- /.card -->
+</div>
+<!-- /.register-box -->
+
+<!-- jQuery -->
+<script src="/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!---->
+<script src="/plugins/sweetalert2/sweetalert2.min.js"></script>
+<!-- Toastr -->
+<script src="/plugins/toastr/toastr.min.js"></script>
+<!---->
+<script src="../../dist/js/demo.js"></script>
+<!-- AdminLTE App -->
+<script src="/dist/js/adminlte.min.js"></script>
+<!---->
+<script src="/js/js.registerAdm.js"></script>
+<!---->
+
+</body>
+</html>

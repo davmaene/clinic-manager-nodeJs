@@ -1,0 +1,20 @@
+.sb-sm small{
+    font-size: 11px;
+    font-weight: bold;
+    display: none;
+}
+#sh-pwd:hover{
+    cursor: pointer;
+    color: #3498db;
+}
+.alter-img{
+    background: #4f6c8059;
+    padding: 0px 5px;
+    border: 1px solid white;
+    /* margin-top: 20px; */
+    font-size: 30px;
+    border-radius: 30px;
+    margin-left: -10px;
+    color: aliceblue;
+    text-transform: uppercase;
+}

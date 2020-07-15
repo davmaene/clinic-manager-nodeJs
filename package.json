@@ -1,0 +1,22 @@
+{
+  "name": "managclaud",
+  "version": "1.0.0",
+  "description": "mngmt system",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "^4.17.1",
+    "markdown": "^0.5.0",
+    "nexmo": "^2.6.0",
+    "nodemailer": "^6.4.6",
+    "sqlite3": "^4.1.1",
+    "textmagic-rest-client": "^1.0.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
